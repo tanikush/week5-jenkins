@@ -16,18 +16,18 @@ pipeline {
 	    }
 	}
 	
-	stage('Validation') {
-	    steps {
-		echo 'Running code validation checks...'
-          	sh 'echo "Validating file structure..."'
-		sh 'ls -la'
-            }
-	}
-
 	stage('Test') {
 	    steps {
 		echo 'Running tests...'
 		sh 'echo "All tests passed"'
+	    }
+	}
+
+	stage('Validation') {
+	    steps {
+		echo 'Running code validation checks...'
+		sh 'echo "Validating file structure..."'
+		sh 'ls -la'
 	    }
 	}
     }
