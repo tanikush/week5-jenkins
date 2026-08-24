@@ -4,7 +4,7 @@ pipeline {
     stages {
 	stage('Checkout') {
            steps {
-	       echo 'Checking out code from GitHub.."
+	       echo 'Checking out code from GitHub..'
 	       checkout scm
 	   }
 	}
@@ -12,13 +12,13 @@ pipeline {
 	stage('Build') {
 	    steps {
 		echo 'Building the application...'
-		sh 'echo "Simulating build process..."
+		sh 'echo "Simulating build process..."'
 	    }
 	}
 
 	stage('Test') {
 	    steps {
-		echo 'Running tests..."
+		echo 'Running tests...'
 		sh 'echo "Simulating test execution..."'
 	    }
 	}
