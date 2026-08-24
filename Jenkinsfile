@@ -18,9 +18,9 @@ pipeline {
 	
 	stage('Validation') {
 	    steps {
-		echo 'Running code validation checks..."
-		sh 'echo "Validating file structure..."
-		sh 'ls -ls'
+		echo 'Running code validation checks...'
+          	sh 'echo "Validating file structure..."'
+		sh 'ls -la'
             }
 	}
 
