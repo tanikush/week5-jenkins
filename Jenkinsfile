@@ -15,6 +15,14 @@ pipeline {
 		sh 'echo "Simulating build process..."'
 	    }
 	}
+	
+	stage('Validation') {
+	    steps {
+		echo 'Running code validation checks..."
+		sh 'echo "Validating file structure..."
+		sh 'ls -ls'
+            }
+	}
 
 	stage('Test') {
 	    steps {
