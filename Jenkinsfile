@@ -22,12 +22,14 @@ pipeline {
 		sh 'echo "Simulating test execution..."'
 	    }
 	}
+    }
 
 
 	post {
 	    success {
 		echo 'Pipeline completed successfully!'
 	    }
+
 	    failure {
 		echo 'Pipeline failed. Check console ouput for details.'
 	    }
